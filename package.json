@@ -12,8 +12,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test-only": "ava",
-    "test": "npm run lint && npm run test-only"
+    "find-unused": "eslint-find-rules --unused",
+    "tests-only": "ava",
+    "pretest": "npm run lint",
+    "test": "npm run tests-only"
   },
   "keywords": [
     "eslintconfig",
@@ -41,6 +43,7 @@
   "devDependencies": {
     "ava": "*",
     "eslint": "^3.19.0",
+    "eslint-find-rules": "^2.0.1",
     "is-plain-obj": "^1.0.0",
     "temp-write": "^3.1.0"
   },
