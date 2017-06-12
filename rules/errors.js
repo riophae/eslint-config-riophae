@@ -1,13 +1,15 @@
+'use strict'
+
 module.exports = {
   rules: {
     'no-await-in-loop': 'off',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': [ 'error', 'except-parens' ],
     'no-console': [ 'error', {
-      allow: [ 'warn', 'error' ]
+      allow: [ 'warn', 'error' ],
     } ],
     'no-constant-condition': [ 'error', {
-      checkLoops: false
+      checkLoops: false,
     } ],
     'no-control-regex': 'error',
     'no-debugger': 'error',
@@ -15,7 +17,7 @@ module.exports = {
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
     'no-empty': [ 'error', {
-      allowEmptyCatch: true
+      allowEmptyCatch: true,
     } ],
     'no-empty-character-class': 'error',
     'no-ex-assign': 'error',
@@ -24,7 +26,7 @@ module.exports = {
       conditionalAssign: false,
       returnAssign: false,
       nestedBinaryExpressions: false,
-      ignoreJSX: 'multi-line'
+      ignoreJSX: 'multi-line',
     } ],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
@@ -34,7 +36,7 @@ module.exports = {
       skipStrings: false,
       skipComments: false,
       skipRegExps: false,
-      skipTemplates: false
+      skipTemplates: false,
     } ],
     'no-obj-calls': 'error',
     'no-prototype-builtins': 'error',
@@ -47,6 +49,6 @@ module.exports = {
     'no-unsafe-negation': 'error',
     'use-isnan': 'error',
     'valid-jsdoc': 'error',
-    'valid-typeof': 'error'
-  }
+    'valid-typeof': 'error',
+  },
 }

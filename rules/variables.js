@@ -1,3 +1,5 @@
+'use strict'
+
 const restrictedGlobals = require('eslint-restricted-globals')
 
 module.exports = {
@@ -13,6 +15,6 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undefined': 'error',
     'no-unused-vars': 'error',
-    'no-use-before-define': 'error'
-  }
+    'no-use-before-define': 'error',
+  },
 }

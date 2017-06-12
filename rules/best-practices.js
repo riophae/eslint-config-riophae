@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   rules: {
     'accessor-pairs': 'error',
@@ -11,7 +13,7 @@ module.exports = {
     'dot-location': [ 'error', 'property' ],
     'dot-notation': 'error',
     eqeqeq: [ 'error', 'always', {
-      null: 'ignore'
+      null: 'ignore',
     } ],
     'guard-for-in': 'error',
     'no-alert': 'error',
@@ -42,8 +44,8 @@ module.exports = {
       exceptions: {
         Property: false,
         VariableDeclarator: false,
-        ImportDeclaration: false
-      }
+        ImportDeclaration: false,
+      },
     } ],
     'no-multi-str': 'error',
     'no-new': 'off',
@@ -73,14 +75,14 @@ module.exports = {
     'no-warning-comments': 'warn',
     'no-with': 'error',
     'prefer-promise-reject-errors': [ 'error', {
-      allowEmptyReject: true
+      allowEmptyReject: true,
     } ],
     radix: 'error',
     'require-await': 'error',
     'vars-on-top': 'error',
     'wrap-iife': [ 'error', 'inside' ],
     yoda: [ 'error', 'never', {
-      exceptRange: true
-    } ]
-  }
+      exceptRange: true,
+    } ],
+  },
 }

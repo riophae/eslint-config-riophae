@@ -5,7 +5,7 @@ import eslint from 'eslint'
 import isPlainObj from 'is-plain-obj'
 import tempWrite from 'temp-write'
 
-const hasRule = (errors, ruleId) => errors.some(x => x.ruleId === ruleId)
+const hasRule = (errors, ruleId) => errors.some((x) => x.ruleId === ruleId)
 
 function runEslint(str, conf) {
   const linter = new eslint.CLIEngine({
@@ -16,13 +16,13 @@ function runEslint(str, conf) {
   return linter.executeOnText(str).results[0].messages
 }
 
-test('deps', t => {
+test('deps', (t) => {
   const pkgJson = require('../package')
 
   t.true(pkgJson.devDependencies.eslint === pkgJson.peerDependencies.eslint)
 })
 
-test('main', t => {
+test('main', (t) => {
   const conf = require('../')
 
   t.true(isPlainObj(conf))

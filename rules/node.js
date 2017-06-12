@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   rules: {
     'callback-return': 'off',
@@ -5,7 +7,7 @@ module.exports = {
     'handle-callback-err': 'error',
     'no-mixed-requires': [ 'error', {
       grouping: true,
-      allowCall: true
+      allowCall: true,
     } ],
     'no-new-require': 'error',
     'no-path-concat': 'error',
@@ -13,5 +15,5 @@ module.exports = {
     'no-process-exit': 'off',
     'no-restricted-modules': 'off',
     'no-sync': 'off',
-  }
+  },
 }

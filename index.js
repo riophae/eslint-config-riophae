@@ -6,21 +6,22 @@ module.exports = {
     './rules/best-practices',
     './rules/variables',
     './rules/node',
-    './rules/style'
+    './rules/style',
+    './rules/es6',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    }
+      experimentalObjectRestSpread: true,
+    },
   },
   env: {
     node: true,
     es6: true,
-    browser: true
+    browser: true,
   },
   rules: {
-    strict: [ 'error', 'never' ]
-  }
+    strict: [ 'error', 'never' ],
+  },
 }
