@@ -16,6 +16,12 @@ function runEslint(str, conf) {
   return linter.executeOnText(str).results[0].messages
 }
 
+test('deps', t => {
+  const pkgJson = require('../package')
+
+  t.true(pkgJson.devDependencies.eslint === pkgJson.peerDependencies.eslint)
+})
+
 test('main', t => {
   const conf = require('../')
 
