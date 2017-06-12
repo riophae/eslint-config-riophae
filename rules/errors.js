@@ -20,9 +20,6 @@ module.exports = {
     'no-empty-character-class': 'error',
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
-    'no-extra-parens': [ 'error', {
-      conditionalAssign: false
-    } ],
     'no-extra-parens': [ 'error', 'all', {
       conditionalAssign: false,
       returnAssign: false,

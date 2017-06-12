@@ -11,7 +11,9 @@
   "repository": "riophae/eslint-config-riophae",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "lint": "eslint .",
+    "test-only": "ava",
+    "test": "npm run lint && npm run test-only"
   },
   "keywords": [
     "eslintconfig",
