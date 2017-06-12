@@ -89,7 +89,7 @@ module.exports = {
       maxEOF: 0,
       maxBOF: 0,
     } ],
-    'no-negated-condition': 'error',
+    'no-negated-condition': 'off',
     'no-nested-ternary': 'off',
     'no-new-object': 'error',
     'no-plusplus': 'off',

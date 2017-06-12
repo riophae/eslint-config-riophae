@@ -35,7 +35,7 @@ module.exports = {
       array: true,
       object: true,
     }, {
-      enforceForRenamedProperties: true,
+      enforceForRenamedProperties: false,
     } ],
     'prefer-numeric-literals': 'off',
     'prefer-rest-params': 'error',
