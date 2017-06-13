@@ -8,6 +8,7 @@ module.exports = {
     './rules/node',
     './rules/style',
     './rules/es6',
+    './rules/import',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2017,
