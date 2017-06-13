@@ -2,6 +2,19 @@
 
 module.exports = {
   plugins: [ 'import' ],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [ '.js', '.json' ],
+      },
+    },
+    'import/extensions': [ '.js', '.jsx' ],
+    'import/core-modules': [],
+    'import/ignore': [
+      'node_modules',
+      '\\.(coffee|scss|css|less|hbs|svg|json)$',
+    ],
+  },
   rules: {
     'import/default': 'off',
     'import/export': 'error',
