@@ -19,7 +19,12 @@ function runEslint(str, conf) {
 test('deps', (t) => {
   const pkgJson = require('../package')
 
-  t.true(pkgJson.devDependencies.eslint === pkgJson.peerDependencies.eslint)
+  Object.keys(pkgJson.peerDependencies).forEach((key) => {
+    t.true(
+      pkgJson.devDependencies[key] === pkgJson.peerDependencies[key],
+      'peer dependnecies should share the same versions as dev dependencies',
+    )
+  })
 })
 
 test('main', (t) => {
