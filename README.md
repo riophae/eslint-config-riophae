@@ -2,10 +2,18 @@
 
 The customized ESLint config for the development of my open-source projects.
 
-## Installation
+## Usage
 
-```
-$ npm install --save-dev eslint-config-riophae
+1. `npm install --save-dev eslint-config-riophae`
+2. Add the preset to your ESLint config:
+
+```js
+{
+  "extends": [ "riophae" ],
+  "rules": {
+    // override if necessary
+  }
+}
 ```
 
 ## License
