@@ -2,11 +2,13 @@
 
 module.exports = {
   rules: {
+    'array-bracket-newline ': 'off',
     'array-bracket-spacing': [ 'error', 'always', {
       singleValue: true,
       objectsInArrays: true,
       arraysInArrays: true,
     } ],
+    'array-element-newline': 'off',
     'block-spacing': [ 'error', 'always' ],
     'brace-style': [ 'error', '1tbs' ],
     camelcase: [ 'error', {
@@ -35,14 +37,19 @@ module.exports = {
       outerIIFEBody: 0,
       MemberExpression: 1,
       FunctionDeclaration: {
-        body: 1,
         parameters: 'first',
+        body: 1,
+      },
+      FunctionExpression: {
+        parameters: 'first',
+        body: 1,
       },
       CallExpression: {
         arguments: 1,
       },
       ArrayExpression: 1,
       ObjectExpression: 1,
+      flatTernaryExpressions: false,
     } ],
     'jsx-quotes': [ 'error', 'prefer-double' ],
     'key-spacing': [ 'error', {
@@ -56,7 +63,6 @@ module.exports = {
     'line-comment-position': 'off',
     'linebreak-style': [ 'error', 'unix' ],
     'lines-around-comment': 'off',
-    'lines-around-directive': [ 'error', 'always' ],
     'max-depth': 'off',
     'max-len': 'off',
     'max-lines': 'off',
@@ -74,8 +80,6 @@ module.exports = {
     'newline-per-chained-call': [ 'error', {
       ignoreChainWithDepth: 2,
     } ],
-    'newline-after-var': 'off',
-    'newline-before-return': 'off',
     'no-array-constructor': 'error',
     'no-bitwise': 'off',
     'no-continue': 'off',
@@ -125,6 +129,7 @@ module.exports = {
       before: false,
       after: true,
     } ],
+    'semi-style': [ 'error', 'last' ],
     'sort-keys': 'off',
     'sort-vars': 'off',
     'space-before-blocks': [ 'error', 'always' ],
@@ -140,6 +145,10 @@ module.exports = {
       nonwords: false,
     } ],
     'spaced-comment': 'off',
+    'switch-colon-spacing': [ 'error', {
+      before: false,
+      after: true,
+    } ],
     'template-tag-spacing': [ 'error', 'never' ],
     'unicode-bom': [ 'error', 'never' ],
     'wrap-regex': 'off',

@@ -5,6 +5,7 @@ module.exports = {
     'callback-return': 'off',
     'global-require': 'error',
     'handle-callback-err': 'error',
+    'no-buffer-constructor': 'error',
     'no-mixed-requires': [ 'error', {
       grouping: true,
       allowCall: true,
