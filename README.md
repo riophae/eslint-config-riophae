@@ -16,7 +16,7 @@ The customized ESLint config for the development of my open-source projects.
 }
 ```
 
-An alternative preset is also provided if you are coding in ES5:
+In case of linting ES5 and below, an alternative preset is also provided:
 
 ```js
 {
