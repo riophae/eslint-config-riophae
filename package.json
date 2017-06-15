@@ -10,6 +10,11 @@
   "license": "MIT",
   "repository": "riophae/eslint-config-riophae",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "legacy.js",
+    "rules"
+  ],
   "scripts": {
     "lint": "eslint .",
     "find-unused": "eslint-find-rules --unused",
