@@ -15,7 +15,7 @@ module.exports = {
       properties: 'always',
     } ],
     'capitalized-comments': 'off',
-    'comma-dangle': [ 'error', 'always-multiline' ],
+    // 'comma-dangle' => depends on ECMAScript version
     'comma-spacing': [ 'error', {
       before: false,
       after: true,
@@ -26,7 +26,7 @@ module.exports = {
     'eol-last': [ 'error', 'always' ],
     'func-call-spacing': [ 'error', 'never' ],
     'func-name-matching': [ 'error', 'always' ],
-    'func-names': [ 'error', 'as-needed' ], // ES6 only
+    // 'func-names' => depends on ECMAScript version
     'func-style': 'off',
     'id-blacklist': 'off',
     'id-length': 'off',
