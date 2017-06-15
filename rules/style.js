@@ -2,7 +2,7 @@
 
 module.exports = {
   rules: {
-    'array-bracket-newline ': 'off',
+    'array-bracket-newline': 'off',
     'array-bracket-spacing': [ 'error', 'always', {
       singleValue: true,
       objectsInArrays: true,
