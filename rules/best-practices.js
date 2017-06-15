@@ -79,7 +79,7 @@ module.exports = {
     } ],
     radix: 'error',
     'require-await': 'error',
-    'vars-on-top': 'error',
+    'vars-on-top': 'off',
     'wrap-iife': [ 'error', 'inside' ],
     yoda: [ 'error', 'never', {
       exceptRange: true,
