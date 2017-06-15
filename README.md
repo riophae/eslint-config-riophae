@@ -16,6 +16,17 @@ The customized ESLint config for the development of my open-source projects.
 }
 ```
 
+An alternative preset is also provided if you are coding in ES5:
+
+```js
+{
+  "extends": [ "riophae/legacy" ],
+  "rules": {
+    // override if necessary
+  }
+}
+```
+
 ## License
 
 MIT
