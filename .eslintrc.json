@@ -6,7 +6,7 @@
     "ecmaFeatures": {
       "jsx": false,
       "experimentalObjectRestSpread": false
-    },
+    }
   },
   "env": {
     "node": true,
