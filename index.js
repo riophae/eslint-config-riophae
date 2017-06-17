@@ -23,7 +23,6 @@ module.exports = {
     browser: true,
   },
   rules: {
-    'comma-dangle': [ 'error', 'always-multiline' ],
     'func-names': [ 'error', 'as-needed' ],
     'strict': [ 'error', 'never' ],
   },

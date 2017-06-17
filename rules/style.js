@@ -15,7 +15,7 @@ module.exports = {
       properties: 'always',
     } ],
     'capitalized-comments': 'off',
-    // 'comma-dangle' => depends on ECMAScript version
+    'comma-dangle': [ 'error', 'always-multiline' ],
     'comma-spacing': [ 'error', {
       before: false,
       after: true,
