@@ -11,7 +11,7 @@ module.exports = {
     'array-element-newline': 'off',
     'block-spacing': [ 'error', 'always' ],
     'brace-style': [ 'error', '1tbs' ],
-    camelcase: [ 'error', {
+    'camelcase': [ 'error', {
       properties: 'always',
     } ],
     'capitalized-comments': 'off',
@@ -31,7 +31,7 @@ module.exports = {
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
-    indent: [ 'error', 2, {
+    'indent': [ 'error', 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
       outerIIFEBody: 0,
@@ -119,12 +119,12 @@ module.exports = {
     'padded-blocks': [ 'error', 'never' ],
     'padding-line-between-statements': 'off',
     'quote-props': [ 'error', 'as-needed' ],
-    quotes: [ 'error', 'single', {
+    'quotes': [ 'error', 'single', {
       avoidEscape: true,
       allowTemplateLiterals: false,
     } ],
     'require-jsdoc': 'off',
-    semi: [ 'error', 'never' ],
+    'semi': [ 'error', 'never' ],
     'semi-spacing': [ 'error', {
       before: false,
       after: true,

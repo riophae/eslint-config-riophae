@@ -19,6 +19,6 @@ module.exports = {
   rules: {
     'comma-dangle': [ 'error', 'never' ],
     'func-names': [ 'error', 'always' ],
-    strict: [ 'error', 'global' ],
+    'strict': [ 'error', 'global' ],
   },
 }

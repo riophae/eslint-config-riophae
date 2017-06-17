@@ -6,13 +6,13 @@ module.exports = {
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'class-methods-use-this': 'off',
-    complexity: 'off',
+    'complexity': 'off',
     'consistent-return': 'off',
-    curly: 'off',
+    'curly': 'off',
     'default-case': 'error',
     'dot-location': [ 'error', 'property' ],
     'dot-notation': 'error',
-    eqeqeq: [ 'error', 'always', {
+    'eqeqeq': [ 'error', 'always', {
       null: 'ignore',
     } ],
     'guard-for-in': 'error',
@@ -77,11 +77,11 @@ module.exports = {
     'prefer-promise-reject-errors': [ 'error', {
       allowEmptyReject: true,
     } ],
-    radix: 'error',
+    'radix': 'error',
     'require-await': 'error',
     'vars-on-top': 'off',
     'wrap-iife': [ 'error', 'inside' ],
-    yoda: [ 'error', 'never', {
+    'yoda': [ 'error', 'never', {
       exceptRange: true,
     } ],
   },
