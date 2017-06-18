@@ -17,10 +17,10 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "find-unused": "eslint-find-rules --unused",
+    "find-unused": "eslint-find-rules --unused ./index.js # don't check legacy preset",
     "tests-only": "ava",
     "pretest": "npm run lint",
-    "test": "npm run tests-only"
+    "test": "npm run tests-only && npm run find-unused"
   },
   "keywords": [
     "eslintconfig",
