@@ -4,7 +4,7 @@ The customized ESLint config for the development of my open-source projects.
 
 ## Usage
 
-1. `npm install --save-dev eslint-config-riophae`
+1. `npm install --save-dev eslint eslint-plugin-import eslint-config-riophae`
 2. Add the preset to your ESLint config:
 
 ```js
