@@ -4,7 +4,7 @@ const restrictedGlobals = require('eslint-restricted-globals')
 
 module.exports = {
   rules: {
-    'init-declarations': [ 'off' ],
+    'init-declarations': 'off',
     'no-catch-shadow': 'error',
     'no-delete-var': 'error',
     'no-label-var': 'error',
@@ -15,6 +15,6 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undefined': 'error',
     'no-unused-vars': 'error',
-    'no-use-before-define': 'error',
+    'no-use-before-define': 'off',
   },
 }
