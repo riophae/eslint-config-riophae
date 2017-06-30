@@ -65,7 +65,11 @@ module.exports = {
     'no-sequences': 'off',
     'no-throw-literal': 'error',
     'no-unmodified-loop-condition': 'error',
-    'no-unused-expressions': 'error',
+    'no-unused-expressions': [ 'error', {
+      allowShortCircuit: true,
+      allowTernary: true,
+      allowTaggedTemplates: true,
+    } ],
     'no-unused-labels': 'off',
     'no-useless-call': 'off',
     'no-useless-concat': 'off',
