@@ -8,7 +8,7 @@ module.exports = {
         extensions: [ '.js', '.json' ],
       },
     },
-    'import/extensions': [ '.js', '.jsx' ],
+    'import/extensions': [ '.js', '.json' ],
     'import/core-modules': [],
     'import/ignore': [
       'node_modules',
