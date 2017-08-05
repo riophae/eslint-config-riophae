@@ -3,7 +3,9 @@
 module.exports = {
   rules: {
     'arrow-body-style': 'off',
-    'arrow-parens': [ 'error', 'always' ],
+    'arrow-parens': [ 'error', 'as-needed', {
+      requireForBlockBody: false,
+    } ],
     'arrow-spacing': 'error',
     'constructor-super': 'error',
     'generator-star-spacing': [ 'error', {

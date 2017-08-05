@@ -11,9 +11,9 @@ module.exports = {
     'import/extensions': [ '.js', '.json', '.vue' ],
   },
   rules: {
+    'import/no-anonymous-default-export': 'off',
     'no-multiple-empty-lines': 'off', // doesn't work well with `.vue` files so disable it
-    'vue/html-end-tags': 'error',
-    'vue/html-no-self-closing': 'error',
+    'vue/html-end-tags': 'off',
     'vue/no-confusing-v-for-v-if': 'error',
     'vue/no-duplicate-attributes': 'error',
     'vue/no-textarea-mustache': 'error',
