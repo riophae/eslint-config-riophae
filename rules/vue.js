@@ -13,8 +13,12 @@ module.exports = {
   rules: {
     'import/no-anonymous-default-export': 'off',
     'no-multiple-empty-lines': 'off', // doesn't work well with `.vue` files so disable it
+    'vue/attribute-hyphenation': [ 'error', 'always' ],
     'vue/html-end-tags': 'off',
+    'vue/name-property-casing': [ 'error', 'kebab-case' ],
+    'vue/no-async-in-computed-properties': 'error',
     'vue/no-confusing-v-for-v-if': 'error',
+    'vue/no-dupe-keys': 'error', // leave options to default
     'vue/no-duplicate-attributes': 'error',
     'vue/no-textarea-mustache': 'error',
     'vue/order-in-components': 'error',
@@ -39,5 +43,14 @@ module.exports = {
     'vue/no-invalid-v-show': 'error',
     'vue/no-invalid-v-text': 'error',
     'vue/no-parsing-error': 'error',
+    'vue/no-reservered-keys': 'error', // leave options to default
+    'vue/no-shared-component-data': 'error',
+    'vue/no-side-effects-in-computed-properties': 'error',
+    'vue/no-template-key': 'error',
+    'vue/require-prop-types': 'error',
+    'vue/require-render-return': 'error',
+    'vue/return-in-computed-property': [ 'error', {
+      treatUndefinedAsUnspecified: true,
+    } ],
   },
 }
