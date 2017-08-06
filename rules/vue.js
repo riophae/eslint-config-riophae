@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  plugins: [ 'vue' ],
+  extends: [ 'plugin:vue/base' ],
   settings: {
     'import/resolver': {
       node: {

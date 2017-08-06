@@ -11,7 +11,6 @@ module.exports = {
     './rules/import',
     './rules/vue',
   ].map(require.resolve),
-  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
