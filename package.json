@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "find-unused": "eslint-find-rules --unused ./index.js # don't check legacy preset",
+    "find-unused": "eslint-find-rules --unused ./index.js && eslint-find-rules --unused ./vue.js # legacy preset is intended to be ignored",
     "tests-only": "ava",
     "pretest": "npm run lint",
     "test": "npm run tests-only && npm run find-unused"
