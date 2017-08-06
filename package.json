@@ -48,7 +48,7 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "eslint": "^4.0.0",
+    "eslint": "^4.2.0",
     "eslint-find-rules": "^3.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-vue": "^3.10.0",
@@ -56,7 +56,7 @@
     "temp-write": "^3.1.0"
   },
   "peerDependencies": {
-    "eslint": "^4.0.0",
+    "eslint": "^4.2.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-vue": "^3.10.0"
   },
