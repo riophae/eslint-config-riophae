@@ -17,7 +17,7 @@ module.exports = {
     'vue/html-end-tags': 'off',
     'vue/html-quotes': [ 'error', 'double' ],
     'vue/jsx-uses-vars': 'error',
-    'vue/name-property-casing': [ 'error', 'kebab-case' ],
+    'vue/name-property-casing': 'off',
     'vue/no-async-in-computed-properties': 'error',
     'vue/no-confusing-v-for-v-if': 'error',
     'vue/no-dupe-keys': 'error', // leave options to default
@@ -47,7 +47,6 @@ module.exports = {
     'vue/require-prop-types': 'error',
     'vue/require-render-return': 'error',
     'vue/require-v-for-key': 'error',
-    'vue/require-valid-default-prop': 'error',
     'vue/return-in-computed-property': [ 'error', {
       treatUndefinedAsUnspecified: true,
     } ],
