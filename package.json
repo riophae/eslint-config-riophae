@@ -13,6 +13,7 @@
   "files": [
     "index.js",
     "legacy.js",
+    "vue.js",
     "rules"
   ],
   "scripts": {
@@ -49,13 +50,15 @@
     "ava": "*",
     "eslint": "^4.0.0",
     "eslint-find-rules": "^3.1.0",
-    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-vue": "^3.10.0",
     "is-plain-obj": "^1.0.0",
     "temp-write": "^3.1.0"
   },
   "peerDependencies": {
     "eslint": "^4.0.0",
-    "eslint-plugin-import": "^2.6.0"
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-vue": "^3.10.0"
   },
   "dependencies": {
     "eslint-restricted-globals": "^0.1.1"
