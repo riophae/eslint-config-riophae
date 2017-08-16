@@ -5,22 +5,15 @@ The customized ESLint config for the development of my open-source projects.
 ## Usage
 
 1. `npm install --save-dev eslint eslint-plugin-import eslint-config-riophae`
-2. Add the preset to your ESLint config:
+2. Choose one from three available presets:
+  - `riophae` - for linting ES6+
+  - `riophae/legacy` - for linting ES5
+  - `riophae/vue` - for linting ES6+ & .vue files
+3. Add the preset to your ESLint config file:
 
 ```js
 {
-  "extends": [ "riophae" ],
-  "rules": {
-    // override if necessary
-  }
-}
-```
-
-In case of linting ES5 and below, an alternative preset is also provided:
-
-```js
-{
-  "extends": [ "riophae/legacy" ],
+  "extends": [ "riophae" ], // also could be "riophae/legacy" or "riophae/vue"
   "rules": {
     // override if necessary
   }
