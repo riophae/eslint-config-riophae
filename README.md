@@ -8,7 +8,7 @@ The customized ESLint config for the development of my open-source projects.
 2. Choose one from three available presets:
   - `riophae` - for linting ES6+
   - `riophae/legacy` - for linting ES5
-  - `riophae/vue` - for linting ES6+ & .vue files
+  - `riophae/vue` - for linting ES6+ & .vue files (one more dependance required: `eslint-plugin-vue`)
 3. Add the preset to your ESLint config file:
 
 ```js
