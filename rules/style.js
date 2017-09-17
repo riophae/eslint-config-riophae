@@ -28,6 +28,7 @@ module.exports = {
     'func-name-matching': [ 'error', 'always' ],
     // 'func-names' => depends on ECMAScript version
     'func-style': 'off',
+    'function-paren-newline': 'off',
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
