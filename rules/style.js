@@ -122,7 +122,7 @@ module.exports = {
     'quote-props': [ 'error', 'as-needed' ],
     'quotes': [ 'error', 'single', {
       avoidEscape: true,
-      allowTemplateLiterals: false,
+      allowTemplateLiterals: true,
     } ],
     'require-jsdoc': 'off',
     'semi': [ 'error', 'never' ],
