@@ -21,7 +21,8 @@
     "find-unused": "eslint-find-rules --unused ./index.js && eslint-find-rules --unused ./vue.js # legacy preset is intended to be ignored",
     "tests-only": "ava",
     "pretest": "npm run lint",
-    "test": "npm run tests-only && npm run find-unused"
+    "test": "npm run tests-only && npm run find-unused",
+    "precommit": "remove-lockfiles"
   },
   "keywords": [
     "eslintconfig",
@@ -53,6 +54,8 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-vue": "^3.13.0",
     "is-plain-obj": "^1.0.0",
+    "pre-commit": "^1.2.2",
+    "remove-lockfiles": "^2.1.2",
     "temp-write": "^3.1.0"
   },
   "peerDependencies": {
