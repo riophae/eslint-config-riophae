@@ -5,7 +5,7 @@ The customized ESLint config for the development of my open-source projects.
 ## Usage
 
 1. `npm install --save-dev eslint eslint-plugin-import eslint-config-riophae`
-2. Choose one from three available presets:
+2. Choose one from available presets below:
 
 - `riophae` for linting ES6+
 - `riophae/legacy` for linting ES5
