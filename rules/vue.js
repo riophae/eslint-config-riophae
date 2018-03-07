@@ -14,6 +14,13 @@ module.exports = {
     'import/no-anonymous-default-export': 'off',
     'no-multiple-empty-lines': 'off', // doesn't work well with `.vue` files so disable it
     'vue/attribute-hyphenation': [ 'error', 'always' ],
+    'vue/attributes-order': 'error',
+    'vue/html-closing-bracket-newline': 'off',
+    'vue/html-closing-bracket-spacing': [ 'error', {
+      startTag: 'never',
+      endTag: 'never',
+      selfClosingTag: 'always',
+    } ],
     'vue/html-indent': [ 'error', 2, {
       attribute: 1,
       closeBracket: 1,
@@ -40,6 +47,7 @@ module.exports = {
     'vue/no-textarea-mustache': 'error',
     'vue/no-unused-vars': 'error',
     'vue/order-in-components': 'error',
+    'vue/prop-name-casing': [ 'error', 'camelCase' ],
     'vue/require-component-is': 'error',
     'vue/require-default-prop': 'error',
     'vue/require-prop-types': 'error',
@@ -48,6 +56,11 @@ module.exports = {
     'vue/require-valid-default-prop': 'error',
     'vue/return-in-computed-property': [ 'error', {
       treatUndefinedAsUnspecified: true,
+    } ],
+    'vue/script-indent': [ 'error', 2, {
+      baseIndent: 1,
+      switchCase: 0,
+      ignores: [],
     } ],
     'vue/this-in-template': [ 'error', 'never' ],
     'vue/v-bind-style': [ 'error', 'shorthand' ],
