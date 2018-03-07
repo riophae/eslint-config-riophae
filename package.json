@@ -18,10 +18,10 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "find-unused": "eslint-find-rules --unused ./index.js && eslint-find-rules --unused ./vue.js # legacy preset is intended to be ignored",
+    "find-rules": "eslint-find-rules --unused --deprecated ./index.js && eslint-find-rules --unused --deprecated ./vue.js # legacy preset is intended to be ignored",
     "tests-only": "ava",
     "pretest": "npm run lint",
-    "test": "npm run tests-only && npm run find-unused",
+    "test": "npm run tests-only && npm run find-rules",
     "precommit": "remove-lockfiles"
   },
   "keywords": [
