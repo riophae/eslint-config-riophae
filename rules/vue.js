@@ -14,6 +14,12 @@ module.exports = {
     'import/no-anonymous-default-export': 'off',
     'no-multiple-empty-lines': 'off', // doesn't work well with `.vue` files so disable it
     'vue/attribute-hyphenation': [ 'error', 'always' ],
+    'vue/html-indent': [ 'error', 2, {
+      attribute: 1,
+      closeBracket: 1,
+      alignAttributesVertically: false,
+      ignores: [],
+    } ],
     'vue/html-end-tags': 'off',
     'vue/html-quotes': [ 'error', 'double' ],
     'vue/html-self-closing': 'error', // use the default settings
@@ -32,6 +38,7 @@ module.exports = {
     'vue/no-side-effects-in-computed-properties': 'error',
     'vue/no-template-key': 'error',
     'vue/no-textarea-mustache': 'error',
+    'vue/no-unused-vars': 'error',
     'vue/order-in-components': 'error',
     'vue/require-component-is': 'error',
     'vue/require-default-prop': 'error',
