@@ -18,8 +18,10 @@ module.exports = {
   rules: {
     'import/default': 'off',
     'import/export': 'error',
+    'import/exports-last': 'error',
     'import/extensions': 'off',
     'import/first': 'off',
+    'import/group-exports': 'off',
     'import/max-dependencies': 'off',
     'import/named': 'error',
     'import/namespace': [ 'error', {
@@ -32,6 +34,7 @@ module.exports = {
     'import/no-amd': 'off',
     'import/no-anonymous-default-export': 'error',
     'import/no-commonjs': 'off',
+    'import/no-default-export': 'off',
     'import/no-deprecated': 'off',
     'import/no-duplicates': 'off',
     'import/no-dynamic-require': 'off',
@@ -48,11 +51,13 @@ module.exports = {
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',
     'import/no-restricted-paths': 'off',
+    'import/no-self-import': 'error',
     'import/no-unassigned-import': 'off',
     'import/no-unresolved': [ 'error', {
       commonjs: true,
       caseSensitive: true,
     } ],
+    'import/no-useless-path-segments': 'error',
     'import/no-webpack-loader-syntax': 'off',
     'import/order': 'error',
     'import/prefer-default-export': 'error',

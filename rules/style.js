@@ -32,6 +32,7 @@ module.exports = {
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
+    'implicit-arrow-linebreak': 'off',
     'indent': [ 'error', 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
@@ -64,6 +65,7 @@ module.exports = {
     'line-comment-position': 'off',
     'linebreak-style': [ 'error', 'unix' ],
     'lines-around-comment': 'off',
+    'lines-between-class-members': [ 'error', 'always' ],
     'max-depth': 'off',
     'max-len': 'off',
     'max-lines': 'off',
@@ -71,6 +73,7 @@ module.exports = {
     'max-params': 'off',
     'max-statements': 'off',
     'max-statements-per-line': 'off',
+    'multiline-comment-style': [ 'error', 'starred-block' ],
     'multiline-ternary': 'off',
     'new-cap': [ 'error', {
       newIsCap: true,
