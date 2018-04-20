@@ -34,6 +34,7 @@ module.exports = {
     'import/no-amd': 'off',
     'import/no-anonymous-default-export': 'error',
     'import/no-commonjs': 'off',
+    'import/no-cycle': 'off',
     'import/no-default-export': 'off',
     'import/no-deprecated': 'off',
     'import/no-duplicates': 'off',
