@@ -34,7 +34,7 @@ module.exports = {
       ignoreReadBeforeAssign: true,
     } ],
     'prefer-destructuring': [ 'error', {
-      array: true,
+      array: false,
       object: true,
     }, {
       enforceForRenamedProperties: false,
