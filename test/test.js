@@ -1,5 +1,3 @@
-/* eslint-disable global-require */
-
 import test from 'ava'
 import eslint from 'eslint'
 import isPlainObj from 'is-plain-obj'
