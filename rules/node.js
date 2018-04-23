@@ -3,7 +3,7 @@
 module.exports = {
   rules: {
     'callback-return': 'off',
-    'global-require': 'error',
+    'global-require': 'off',
     'handle-callback-err': 'error',
     'no-buffer-constructor': 'error',
     'no-mixed-requires': [ 'error', {
