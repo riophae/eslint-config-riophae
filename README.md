@@ -1,11 +1,11 @@
 # eslint-config-riophae [![npm Version](https://badge.fury.io/js/eslint-config-riophae.svg)](http://badge.fury.io/js/eslint-config-riophae) [![Build Status](https://travis-ci.org/riophae/eslint-config-riophae.svg?branch=master)](https://travis-ci.org/riophae/eslint-config-riophae)
 
-The customized ESLint config for the development of my open-source projects.
+The customized ESLint shareable configs for the development of my open-source projects.
 
 ## Usage
 
 1. `npm install --save-dev eslint eslint-plugin-import eslint-config-riophae`
-2. Choose one from available presets below:
+2. Choose one from these three presets:
 
 - `riophae` for linting ES6+
 - `riophae/legacy` for linting ES5

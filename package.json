@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-riophae",
-  "version": "0.0.5",
-  "description": "The customized ESLint config for the development of my open-source projects.",
+  "version": "0.0.6",
+  "description": "The customized ESLint shareable configs for the development of my open-source projects.",
   "author": {
     "name": "Riophae Lee",
     "email": "riophaelee@gmail.com",
