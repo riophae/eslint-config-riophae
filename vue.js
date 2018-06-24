@@ -12,11 +12,8 @@ module.exports = {
     './rules/vue',
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: 'module',
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
   },
   env: {
     node: true,
@@ -27,4 +24,10 @@ module.exports = {
     'func-names': [ 'error', 'as-needed' ],
     'strict': [ 'error', 'never' ],
   },
+  overrides: [ {
+    files: [ '*.vue' ],
+    rules: {
+      indent: 'off', // not working well with .vue files so disable it
+    },
+  } ],
 }

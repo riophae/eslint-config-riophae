@@ -16,6 +16,7 @@ module.exports = {
       null: 'ignore',
     } ],
     'guard-for-in': 'error',
+    'max-classes-per-file': 'off',
     'no-alert': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',

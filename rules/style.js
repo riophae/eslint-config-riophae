@@ -13,6 +13,7 @@ module.exports = {
     'brace-style': [ 'error', '1tbs' ],
     'camelcase': [ 'error', {
       properties: 'always',
+      ignoreDestructuring: true,
     } ],
     'capitalized-comments': 'off',
     'comma-dangle': [ 'error', 'always-multiline' ],
@@ -34,7 +35,7 @@ module.exports = {
     'id-match': 'off',
     'implicit-arrow-linebreak': 'off',
     'indent': [ 'error', 2, {
-      SwitchCase: 1,
+      SwitchCase: 0,
       VariableDeclarator: 1,
       outerIIFEBody: 0,
       MemberExpression: 1,
@@ -69,6 +70,7 @@ module.exports = {
     'max-depth': 'off',
     'max-len': 'off',
     'max-lines': 'off',
+    'max-lines-per-function': 'off',
     'max-nested-callbacks': 'off',
     'max-params': 'off',
     'max-statements': 'off',
@@ -120,6 +122,7 @@ module.exports = {
     'operator-linebreak': 'off',
     'padded-blocks': [ 'error', 'never' ],
     'padding-line-between-statements': 'off',
+    'prefer-object-spread': 'error',
     'quote-props': [ 'error', 'as-needed' ],
     'quotes': [ 'error', 'single', {
       avoidEscape: true,

@@ -17,6 +17,7 @@ module.exports = {
   },
   rules: {
     'import/default': 'off',
+    'import/dynamic-import-chunkname': 'error',
     'import/export': 'error',
     'import/exports-last': 'error',
     'import/extensions': 'off',
