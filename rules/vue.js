@@ -46,6 +46,8 @@ module.exports = {
     'vue/no-template-key': 'error',
     'vue/no-textarea-mustache': 'error',
     'vue/no-unused-vars': 'error',
+    'vue/no-use-v-if-with-v-for': 'off',
+    'vue/no-v-html': 'error',
     'vue/order-in-components': 'error',
     'vue/prop-name-casing': [ 'error', 'camelCase' ],
     'vue/require-component-is': 'error',

@@ -52,6 +52,7 @@ module.exports = {
     'import/no-named-default': 'error',
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',
+    'import/no-relative-parent-imports': 'off',
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
     'import/no-unassigned-import': 'off',
