@@ -6,6 +6,7 @@ module.exports = {
     'getter-return': [ 'error', {
       allowImplicit: false,
     } ],
+    'no-async-promise-executor': 'error',
     'no-await-in-loop': 'off',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': [ 'error', 'except-parens' ],
@@ -42,6 +43,7 @@ module.exports = {
       skipRegExps: false,
       skipTemplates: false,
     } ],
+    'no-misleading-character-class': 'error',
     'no-obj-calls': 'error',
     'no-prototype-builtins': 'error',
     'no-regex-spaces': 'error',
@@ -51,6 +53,7 @@ module.exports = {
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
+    'require-atomic-updates': 'error',
     'use-isnan': 'error',
     'valid-jsdoc': 'error',
     'valid-typeof': 'error',

@@ -84,6 +84,7 @@ module.exports = {
     } ],
     'radix': 'error',
     'require-await': 'error',
+    'require-unicode-regexp': 'off',
     'vars-on-top': 'off',
     'wrap-iife': [ 'error', 'inside' ],
     'yoda': [ 'error', 'never', {
