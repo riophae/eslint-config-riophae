@@ -1,4 +1,4 @@
-# eslint-config-riophae [![npm Version](https://badge.fury.io/js/eslint-config-riophae.svg)](http://badge.fury.io/js/eslint-config-riophae) [![Build Status](https://travis-ci.org/riophae/eslint-config-riophae.svg?branch=master)](https://travis-ci.org/riophae/eslint-config-riophae)
+# eslint-config-riophae [![npm](https://badgen.now.sh/npm/v/eslint-config-riophae)](https://www.npmjs.com/package/eslint-config-riophae) [![Build](https://badgen.now.sh/travis/riophae/eslint-config-riophae)](https://travis-ci.org/riophae/eslint-config-riophae) [![Known vulnerabilities](https://snyk.io/test/npm/eslint-config-riophae/badge.svg)](https://snyk.io/test/npm/eslint-config-riophae)
 
 The customized ESLint shareable configs for the development of my open-source projects.
 
