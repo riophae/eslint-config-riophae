@@ -11,7 +11,7 @@ module.exports = {
     './rules/import',
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2019,
     sourceType: 'module',
   },
   env: {
