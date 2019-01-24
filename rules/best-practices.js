@@ -73,6 +73,7 @@ module.exports = {
     } ],
     'no-unused-labels': 'off',
     'no-useless-call': 'off',
+    'no-useless-catch': 'error',
     'no-useless-concat': 'off',
     'no-useless-escape': 'error',
     'no-useless-return': 'error',

@@ -55,7 +55,6 @@ module.exports = {
     'no-unsafe-negation': 'error',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
-    'valid-jsdoc': 'error',
     'valid-typeof': 'error',
   },
 }

@@ -50,6 +50,7 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'error',
     'import/no-named-default': 'error',
+    'import/no-named-export': 'off',
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',
     'import/no-relative-parent-imports': 'off',

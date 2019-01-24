@@ -128,7 +128,6 @@ module.exports = {
       avoidEscape: true,
       allowTemplateLiterals: true,
     } ],
-    'require-jsdoc': 'off',
     'semi': [ 'error', 'never' ],
     'semi-spacing': [ 'error', {
       before: false,

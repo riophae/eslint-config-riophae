@@ -49,22 +49,22 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "eslint": "^5.6.0",
+    "eslint": "^5.12.0",
     "eslint-find-rules": "^3.2.3",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-vue": "^4.7.1",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-vue": "^5.1.0",
     "is-plain-obj": "^1.0.0",
     "pre-commit": "^1.2.2",
     "remove-lockfiles": "^2.1.2",
     "temp-write": "^3.1.0"
   },
   "peerDependencies": {
-    "eslint": "^5.6.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-vue": "^4.7.1"
+    "eslint": "^5.12.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-vue": "^5.1.0"
   },
   "dependencies": {
-    "eslint-restricted-globals": "^0.1.1"
+    "eslint-restricted-globals": "^0.2.0"
   },
   "engines": {
     "node": "^6.14.0 || ^8.10.0 || >=9.10.0"
