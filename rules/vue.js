@@ -1,5 +1,16 @@
 'use strict'
 
+function ruleNotFound(ruleName) {
+  throw new Error(`Unknown rule: ${ruleName}`)
+}
+
+function mapRules(sourceRules, ruleNames) {
+  return ruleNames.reduce((mappedRules, ruleName) => ({
+    ...mappedRules,
+    [`vue/${ruleName}`]: sourceRules[ruleName] || ruleNotFound(ruleName),
+  }), {})
+}
+
 module.exports = {
   extends: [ 'plugin:vue/base' ],
   settings: {
@@ -11,8 +22,28 @@ module.exports = {
     'import/extensions': [ '.js', '.json', '.vue' ],
   },
   rules: {
-    'import/no-anonymous-default-export': 'off',
+    // These rules share the same options as their same-named core counterparts.
+    // Not only avoided duplications, but also guaranteed their settings will be kept same.
+    ...mapRules(require('./style').rules, [
+      'array-bracket-spacing',
+      'block-spacing',
+      'brace-style',
+      'camelcase',
+      'comma-dangle',
+      'key-spacing',
+      'no-restricted-syntax',
+      'object-curly-spacing',
+      'space-infix-ops',
+      'space-unary-ops',
+    ]),
+    ...mapRules(require('./best-practices').rules, [
+      'eqeqeq',
+    ]),
+    ...mapRules(require('./es6').rules, [
+      'arrow-spacing',
+    ]),
     'no-multiple-empty-lines': 'off', // doesn't work well with `.vue` files so disable it
+    'import/no-anonymous-default-export': 'off',
     'vue/attribute-hyphenation': [ 'error', 'always' ],
     'vue/attributes-order': 'error',
     'vue/component-name-in-template-casing': 'off',
@@ -30,18 +61,20 @@ module.exports = {
       ignores: [],
     } ],
     'vue/html-quotes': [ 'error', 'double' ],
-    'vue/html-self-closing': 'error', // use the default settings
+    'vue/html-self-closing': 'error', // leave to defaults
     'vue/jsx-uses-vars': 'error',
+    'vue/match-component-file-name': 'off',
     'vue/max-attributes-per-line': 'off',
     'vue/multiline-html-element-content-newline': 'error',
     'vue/mustache-interpolation-spacing': [ 'error', 'always' ],
     'vue/name-property-casing': 'off',
     'vue/no-async-in-computed-properties': 'error',
-    'vue/no-dupe-keys': 'error', // leave options to default
+    'vue/no-boolean-default': 'off',
+    'vue/no-dupe-keys': 'error', // leave to defaults
     'vue/no-duplicate-attributes': 'error',
     'vue/no-multi-spaces': 'error',
     'vue/no-parsing-error': 'error',
-    'vue/no-reserved-keys': 'error', // leave options to default
+    'vue/no-reserved-keys': 'error', // leave to defaults
     'vue/no-shared-component-data': 'error',
     'vue/no-side-effects-in-computed-properties': 'error',
     'vue/no-spaces-around-equal-signs-in-attribute': 'error',
@@ -56,6 +89,7 @@ module.exports = {
     'vue/prop-name-casing': [ 'error', 'camelCase' ],
     'vue/require-component-is': 'error',
     'vue/require-default-prop': 'error',
+    'vue/require-direct-export': 'error',
     'vue/require-prop-type-constructor': 'error',
     'vue/require-prop-types': 'error',
     'vue/require-render-return': 'error',
@@ -73,6 +107,7 @@ module.exports = {
     'vue/this-in-template': [ 'error', 'never' ],
     'vue/use-v-on-exact': 'error',
     'vue/v-bind-style': [ 'error', 'shorthand' ],
+    'vue/v-on-function-call': 'off',
     'vue/v-on-style': [ 'error', 'shorthand' ],
     'vue/valid-template-root': 'error',
     'vue/valid-v-bind': 'error',

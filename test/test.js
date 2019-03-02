@@ -5,13 +5,13 @@ import tempWrite from 'temp-write'
 
 const hasRule = (errors, ruleId) => errors.some(x => x.ruleId === ruleId)
 
-function runEslint(str, conf) {
+function runEslint(string, config) {
   const linter = new eslint.CLIEngine({
     useEslintrc: false,
-    configFile: tempWrite.sync(JSON.stringify(conf)),
+    configFile: tempWrite.sync(JSON.stringify(config)),
   })
 
-  return linter.executeOnText(str).results[0].messages
+  return linter.executeOnText(string).results[0].messages
 }
 
 test('deps', t => {
@@ -26,10 +26,16 @@ test('deps', t => {
 })
 
 test('main', t => {
-  const conf = require('../')
+  const configs = [
+    require('../'),
+    require('../legacy'),
+    require('../vue'),
+  ]
 
-  t.true(isPlainObj(conf))
+  configs.forEach(config => {
+    t.true(isPlainObj(config))
 
-  const errors = runEslint('\'use strict\'\nconsole.log("unicorn")\n', conf)
-  t.true(hasRule(errors, 'quotes'))
+    const errors = runEslint('\'use strict\'\nconsole.log("unicorn")\n', config)
+    t.true(hasRule(errors, 'quotes'))
+  })
 })

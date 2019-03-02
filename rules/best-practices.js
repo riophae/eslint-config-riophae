@@ -80,6 +80,7 @@ module.exports = {
     'no-void': 'off',
     'no-warning-comments': 'warn',
     'no-with': 'error',
+    'prefer-named-capture-group': 'off',
     'prefer-promise-reject-errors': [ 'error', {
       allowEmptyReject: true,
     } ],
