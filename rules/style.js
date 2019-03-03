@@ -16,7 +16,13 @@ module.exports = {
       ignoreDestructuring: true,
     } ],
     'capitalized-comments': 'off',
-    'comma-dangle': [ 'error', 'always-multiline' ],
+    'comma-dangle': [ 'error', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'always-multiline',
+    } ],
     'comma-spacing': [ 'error', {
       before: false,
       after: true,

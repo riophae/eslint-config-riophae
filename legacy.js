@@ -17,6 +17,7 @@ module.exports = {
     browser: true,
   },
   rules: {
+    'comma-dangle': [ 'error', 'always-multiline' ],
     'func-names': [ 'error', 'always' ],
     'strict': [ 'error', 'global' ],
   },
