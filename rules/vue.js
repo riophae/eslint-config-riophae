@@ -18,13 +18,13 @@ module.exports = {
       node: {
         extensions: [
           ...require('./import').settings['import/resolver'].node.extensions,
-          'vue',
+          '.vue',
         ],
       },
     },
     'import/extensions': [
       ...require('./import').settings['import/extensions'],
-      'vue',
+      '.vue',
     ],
   },
   rules: {
