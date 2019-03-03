@@ -16,10 +16,16 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: [ '.js', '.json', '.vue' ],
+        extensions: [
+          ...require('./import').settings['import/resolver'].node.extensions,
+          'vue',
+        ],
       },
     },
-    'import/extensions': [ '.js', '.json', '.vue' ],
+    'import/extensions': [
+      ...require('./import').settings['import/extensions'],
+      'vue',
+    ],
   },
   rules: {
     // These rules share the same options as their same-named core counterparts.
@@ -42,8 +48,6 @@ module.exports = {
     ...mapRules(require('./es6').rules, [
       'arrow-spacing',
     ]),
-    'no-multiple-empty-lines': 'off', // doesn't work well with `.vue` files so disable it
-    'import/no-anonymous-default-export': 'off',
     'vue/attribute-hyphenation': [ 'error', 'always' ],
     'vue/attributes-order': 'error',
     'vue/component-name-in-template-casing': 'off',
