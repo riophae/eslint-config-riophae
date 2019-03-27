@@ -129,7 +129,7 @@ module.exports = {
     'padded-blocks': [ 'error', 'never' ],
     'padding-line-between-statements': 'off',
     'prefer-object-spread': 'error',
-    'quote-props': [ 'error', 'as-needed' ],
+    'quote-props': [ 'error', 'consistent-as-needed' ],
     'quotes': [ 'error', 'single', {
       avoidEscape: true,
       allowTemplateLiterals: true,
