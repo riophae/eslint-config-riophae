@@ -21,8 +21,7 @@
     "find-rules": "eslint-find-rules --unused --deprecated ./index.js && eslint-find-rules --unused --deprecated ./vue.js # legacy preset is intended to be ignored",
     "tests-only": "ava",
     "pretest": "npm run lint",
-    "test": "npm run tests-only && npm run find-rules",
-    "precommit": "remove-lockfiles"
+    "test": "npm run tests-only && npm run find-rules"
   },
   "keywords": [
     "eslintconfig",
@@ -54,8 +53,6 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^5.2.2",
     "is-plain-obj": "^1.0.0",
-    "pre-commit": "^1.2.2",
-    "remove-lockfiles": "^2.1.2",
     "temp-write": "^3.1.0"
   },
   "peerDependencies": {
