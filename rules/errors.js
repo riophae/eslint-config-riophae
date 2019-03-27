@@ -9,7 +9,7 @@ module.exports = {
     'no-async-promise-executor': 'error',
     'no-await-in-loop': 'off',
     'no-compare-neg-zero': 'error',
-    'no-cond-assign': [ 'error', 'except-parens' ],
+    'no-cond-assign': 'off',
     'no-console': [ 'error', {
       allow: [ 'warn', 'error' ],
     } ],
@@ -27,12 +27,7 @@ module.exports = {
     'no-empty-character-class': 'error',
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
-    'no-extra-parens': [ 'error', 'all', {
-      conditionalAssign: false,
-      returnAssign: false,
-      nestedBinaryExpressions: false,
-      ignoreJSX: 'multi-line',
-    } ],
+    'no-extra-parens': 'off',
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
     'no-inner-declarations': 'error',
