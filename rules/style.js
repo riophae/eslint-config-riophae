@@ -43,7 +43,7 @@ module.exports = {
     'indent': [ 'error', 2, {
       SwitchCase: 0,
       VariableDeclarator: 1,
-      outerIIFEBody: 0,
+      outerIIFEBody: 1,
       MemberExpression: 1,
       FunctionDeclaration: {
         parameters: 'first',
