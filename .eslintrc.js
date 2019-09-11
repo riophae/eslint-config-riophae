@@ -4,7 +4,6 @@ module.exports = {
   'root': true,
   'extends': './index.js',
   'parserOptions': {
-    'ecmaVersion': 2019,
     'sourceType': 'script',
   },
   'env': {
@@ -14,6 +13,5 @@ module.exports = {
   },
   'rules': {
     'quote-props': [ 'error', 'consistent' ],
-    'strict': [ 'error', 'global' ],
   },
 }
