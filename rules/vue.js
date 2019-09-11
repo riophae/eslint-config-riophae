@@ -12,7 +12,12 @@ function mapRules(sourceRules, ruleNames) {
 }
 
 module.exports = {
-  extends: [ 'plugin:vue/base' ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  plugins: [ 'vue' ],
   settings: {
     'import/resolver': {
       node: {
@@ -50,6 +55,7 @@ module.exports = {
     ]),
     'vue/attribute-hyphenation': [ 'error', 'always' ],
     'vue/attributes-order': 'error',
+    'vue/comment-directive': 'error',
     'vue/component-name-in-template-casing': 'off',
     'vue/html-closing-bracket-newline': 'off',
     'vue/html-closing-bracket-spacing': [ 'error', {
