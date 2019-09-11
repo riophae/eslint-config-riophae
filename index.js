@@ -4,6 +4,7 @@ module.exports = {
   extends: [
     './rules/errors',
     './rules/best-practices',
+    './rules/strict-mode',
     './rules/variables',
     './rules/node',
     './rules/style',
@@ -21,6 +22,5 @@ module.exports = {
   },
   rules: {
     'func-names': [ 'error', 'as-needed' ],
-    'strict': [ 'error', 'never' ],
   },
 }
