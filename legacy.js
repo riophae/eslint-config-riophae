@@ -8,6 +8,7 @@ module.exports = {
     './rules/variables',
     './rules/node',
     './rules/style',
+    './rules/unicorn',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 5,
@@ -18,6 +19,10 @@ module.exports = {
     browser: true,
   },
   rules: {
+    'unicorn/no-for-loop': 'off',
+    'unicorn/prefer-exponentiation-operator': 'off',
+    'unicorn/prefer-includes': 'off',
+    'unicorn/prefer-starts-ends-with': 'off',
     'comma-dangle': [ 'error', 'always-multiline' ],
     'func-names': [ 'error', 'always' ],
   },

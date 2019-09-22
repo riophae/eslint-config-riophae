@@ -61,6 +61,7 @@
     "eslint-plugin-vue": "^5.2.3"
   },
   "dependencies": {
+    "eslint-plugin-unicorn": "^11.0.2",
     "eslint-restricted-globals": "^0.2.0"
   },
   "engines": {

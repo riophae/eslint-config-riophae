@@ -27,7 +27,7 @@ test('deps', t => {
 
 test('main', t => {
   const configs = [
-    require('../'),
+    require('..'),
     require('../legacy'),
     require('../vue'),
   ]

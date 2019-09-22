@@ -2,7 +2,7 @@
 
 module.exports = {
   'root': true,
-  'extends': './index.js',
+  'extends': '.',
   'parserOptions': {
     'sourceType': 'script',
   },

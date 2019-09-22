@@ -9,6 +9,7 @@ module.exports = {
     './rules/node',
     './rules/style',
     './rules/es6',
+    './rules/unicorn',
     './rules/import',
   ].map(require.resolve),
   parserOptions: {
@@ -19,8 +20,5 @@ module.exports = {
     node: true,
     es6: true,
     browser: true,
-  },
-  rules: {
-    'func-names': [ 'error', 'as-needed' ],
   },
 }

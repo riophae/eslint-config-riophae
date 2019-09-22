@@ -16,6 +16,7 @@ module.exports = {
       ignoreDestructuring: true,
     } ],
     'capitalized-comments': 'off',
+    // depends on ECMAScript version
     'comma-dangle': [ 'error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
@@ -33,7 +34,8 @@ module.exports = {
     'eol-last': [ 'error', 'always' ],
     'func-call-spacing': [ 'error', 'never' ],
     'func-name-matching': [ 'error', 'always' ],
-    // 'func-names' => depends on ECMAScript version
+    // depends on ECMAScript version
+    'func-names': [ 'error', 'as-needed' ],
     'func-style': 'off',
     'function-call-argument-newline': [ 'error', 'consistent' ],
     'function-paren-newline': 'off',
