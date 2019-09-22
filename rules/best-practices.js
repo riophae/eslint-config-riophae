@@ -10,6 +10,7 @@ module.exports = {
     'consistent-return': 'off',
     'curly': 'off',
     'default-case': 'error',
+    'default-param-last': 'error',
     'dot-location': [ 'error', 'property' ],
     'dot-notation': 'error',
     'eqeqeq': [ 'error', 'always', {
@@ -84,6 +85,7 @@ module.exports = {
     'prefer-promise-reject-errors': [ 'error', {
       allowEmptyReject: true,
     } ],
+    'prefer-regex-literals': 'error',
     'radix': 'error',
     'require-await': 'error',
     'require-unicode-regexp': 'off',
