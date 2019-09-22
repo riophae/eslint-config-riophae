@@ -51,6 +51,7 @@
     "eslint": "^6.4.0",
     "eslint-find-rules": "^3.4.0",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-unicorn": "^11.0.2",
     "eslint-plugin-vue": "^5.2.3",
     "is-plain-obj": "^2.0.0",
     "temp-write": "^4.0.0"
@@ -58,10 +59,10 @@
   "peerDependencies": {
     "eslint": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-unicorn": "^11.0.2",
     "eslint-plugin-vue": "^5.2.3"
   },
   "dependencies": {
-    "eslint-plugin-unicorn": "^11.0.2",
     "eslint-restricted-globals": "^0.2.0"
   },
   "engines": {

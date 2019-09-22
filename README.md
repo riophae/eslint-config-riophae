@@ -4,12 +4,12 @@ The customized ESLint shareable configs for the development of my open-source pr
 
 ## Usage
 
-1. `npm install --save-dev eslint eslint-plugin-import eslint-config-riophae`
+1. `npm install --save-dev eslint eslint-plugin-unicorn eslint-plugin-import eslint-config-riophae`
 2. Choose one from these three presets:
 
-- `riophae` for linting ES6+
-- `riophae/legacy` for linting ES5
-- `riophae/vue` for linting ES6+ & .vue files (one more dependency required: `eslint-plugin-vue`)
+    - `riophae` for linting ES6+
+    - `riophae/legacy` for linting ES5
+    - `riophae/vue` for linting ES6+ & .vue files (one more dependency required: `eslint-plugin-vue`)
 
 3. Add the preset to your ESLint config file:
 
