@@ -8,7 +8,9 @@ module.exports = {
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
     'unicorn/escape-case': 'error',
-    'unicorn/expiring-todo-comments': 'error',
+    'unicorn/expiring-todo-comments': [ 'error', {
+      allowWarningComments: true,
+    } ],
     'unicorn/explicit-length-check': 'off',
     'unicorn/filename-case': 'off',
     'unicorn/import-index': 'error',
