@@ -22,20 +22,20 @@ module.exports = {
     'import/resolver': {
       node: {
         extensions: [
-          ...require('./import').settings['import/resolver'].node.extensions,
+          ...require('./plugin-import').settings['import/resolver'].node.extensions,
           '.vue',
         ],
       },
     },
     'import/extensions': [
-      ...require('./import').settings['import/extensions'],
+      ...require('./plugin-import').settings['import/extensions'],
       '.vue',
     ],
   },
   rules: {
     // These rules share the same options as their same-named core counterparts.
     // Not only avoided duplications, but also guaranteed their settings will be kept same.
-    ...mapRules(require('./style').rules, [
+    ...mapRules(require('./stylistic-issues').rules, [
       'array-bracket-spacing',
       'block-spacing',
       'brace-style',
@@ -50,7 +50,7 @@ module.exports = {
     ...mapRules(require('./best-practices').rules, [
       'eqeqeq',
     ]),
-    ...mapRules(require('./es6').rules, [
+    ...mapRules(require('./ecmascript-6').rules, [
       'arrow-spacing',
     ]),
     'vue/attribute-hyphenation': [ 'error', 'always' ],

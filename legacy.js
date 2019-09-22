@@ -2,13 +2,13 @@
 
 module.exports = {
   extends: [
-    './rules/errors',
+    './rules/possible-errors',
     './rules/best-practices',
     './rules/strict-mode',
     './rules/variables',
-    './rules/node',
-    './rules/style',
-    './rules/unicorn',
+    './rules/nodejs-and-commonjs',
+    './rules/stylistic-issues',
+    './rules/plugin-unicorn',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 5,
