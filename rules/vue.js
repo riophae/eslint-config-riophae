@@ -12,12 +12,7 @@ function mapRules(sourceRules, ruleNames) {
 }
 
 module.exports = {
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  plugins: [ 'vue' ],
+  extends: 'plugin:vue/base',
   settings: {
     'import/resolver': {
       node: {
@@ -34,7 +29,7 @@ module.exports = {
   },
   rules: {
     // These rules share the same options as their same-named core counterparts.
-    // Not only avoided duplications, but also guaranteed their settings will be kept same.
+    // These not only avoided duplications, these also guaranteed their settings will be kept same.
     ...mapRules(require('./stylistic-issues').rules, [
       'array-bracket-spacing',
       'block-spacing',
