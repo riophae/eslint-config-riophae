@@ -49,7 +49,7 @@ module.exports = {
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
-    'require-atomic-updates': 'error',
+    'require-atomic-updates': 'off',
     'use-isnan': 'error',
     'valid-typeof': 'error',
   },
