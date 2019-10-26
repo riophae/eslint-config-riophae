@@ -46,6 +46,7 @@ module.exports = {
     'unicorn/prefer-spread': 'off',
     // depends on ECMAScript version
     'unicorn/prefer-starts-ends-with': 'error',
+    'unicorn/prefer-string-slice': 'error',
     'unicorn/prefer-text-content': 'error',
     'unicorn/prefer-type-error': 'error',
     'unicorn/prevent-abbreviations': 'off',
