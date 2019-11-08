@@ -19,9 +19,8 @@
   "scripts": {
     "lint": "eslint .",
     "find-rules": "eslint-find-rules --unused --deprecated ./index.js && eslint-find-rules --unused --deprecated ./vue.js # legacy preset is intended to be ignored",
-    "tests-only": "ava",
-    "pretest": "npm run lint",
-    "test": "npm run tests-only && npm run find-rules"
+    "unit": "ava",
+    "test": "npm run lint && npm run unit && npm run find-rules"
   },
   "keywords": [
     "eslintconfig",
@@ -52,7 +51,7 @@
     "eslint-find-rules": "^3.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-unicorn": "^12.1.0",
-    "eslint-plugin-vue": "^5.2.3",
+    "eslint-plugin-vue": "^6.0.0",
     "is-plain-obj": "^2.0.0",
     "temp-write": "^4.0.0"
   },
@@ -60,7 +59,7 @@
     "eslint": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-unicorn": "^12.1.0",
-    "eslint-plugin-vue": "^5.2.3"
+    "eslint-plugin-vue": "^6.0.0"
   },
   "dependencies": {
     "eslint-restricted-globals": "^0.2.0"

@@ -37,13 +37,16 @@ module.exports = {
       'camelcase',
       'comma-dangle',
       'key-spacing',
+      'keyword-spacing',
       'no-restricted-syntax',
       'object-curly-spacing',
       'space-infix-ops',
       'space-unary-ops',
     ]),
     ...mapRules(require('./best-practices').rules, [
+      'dot-location',
       'eqeqeq',
+      'no-empty-pattern',
     ]),
     ...mapRules(require('./ecmascript-6').rules, [
       'arrow-spacing',
@@ -75,6 +78,7 @@ module.exports = {
     'vue/name-property-casing': 'off',
     'vue/no-async-in-computed-properties': 'error',
     'vue/no-boolean-default': 'off',
+    'vue/no-deprecated-scope-attribute': 'error',
     'vue/no-dupe-keys': 'error', // leave to defaults
     'vue/no-duplicate-attributes': 'error',
     'vue/no-multi-spaces': 'error',
@@ -114,6 +118,7 @@ module.exports = {
     'vue/v-bind-style': [ 'error', 'shorthand' ],
     'vue/v-on-function-call': 'off',
     'vue/v-on-style': [ 'error', 'shorthand' ],
+    'vue/v-slot-style': [ 'error', 'shorthand' ],
     'vue/valid-template-root': 'error',
     'vue/valid-v-bind': 'error',
     'vue/valid-v-cloak': 'error',
@@ -127,6 +132,7 @@ module.exports = {
     'vue/valid-v-once': 'error',
     'vue/valid-v-pre': 'error',
     'vue/valid-v-show': 'error',
+    'vue/valid-v-slot': 'error',
     'vue/valid-v-text': 'error',
   },
 }
