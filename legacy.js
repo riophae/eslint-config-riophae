@@ -26,5 +26,6 @@ module.exports = {
     'unicorn/prefer-starts-ends-with': 'off',
     'comma-dangle': [ 'error', 'always-multiline' ],
     'func-names': [ 'error', 'always' ],
+    'prefer-exponentiation-operator': 'off',
   },
 }

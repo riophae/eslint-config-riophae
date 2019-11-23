@@ -131,6 +131,8 @@ module.exports = {
     'operator-linebreak': 'off',
     'padded-blocks': [ 'error', 'never' ],
     'padding-line-between-statements': 'off',
+    // depends on ECMAScript version
+    'prefer-exponentiation-operator': 'error',
     'prefer-object-spread': 'error',
     'quote-props': [ 'error', 'consistent-as-needed' ],
     'quotes': [ 'error', 'single', {

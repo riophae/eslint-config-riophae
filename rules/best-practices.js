@@ -16,11 +16,13 @@ module.exports = {
     'eqeqeq': [ 'error', 'always', {
       null: 'ignore',
     } ],
+    'grouped-accessor-pairs': [ 'error', 'getBeforeSet' ],
     'guard-for-in': 'error',
     'max-classes-per-file': 'off',
     'no-alert': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
+    'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-else-return': 'off',
     'no-empty-function': 'error',
