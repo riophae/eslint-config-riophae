@@ -39,6 +39,8 @@ module.exports = {
     'unicorn/prefer-flat-map': 'error',
     // depends on ECMAScript version
     'unicorn/prefer-includes': 'error',
+    'unicorn/prefer-modern-dom-apis': 'error',
+    'unicorn/prefer-negative-index': 'error',
     'unicorn/prefer-node-append': 'error',
     'unicorn/prefer-node-remove': 'error',
     'unicorn/prefer-query-selector': 'off',
@@ -48,6 +50,7 @@ module.exports = {
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/prefer-string-slice': 'error',
     'unicorn/prefer-text-content': 'error',
+    'unicorn/prefer-trim-start-end': 'error',
     'unicorn/prefer-type-error': 'error',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/regex-shorthand': 'off',
