@@ -3,7 +3,7 @@
 module.exports = {
   extends: [
     '.',
-    './rules/vue',
+    './rules/plugin-vue',
   ].map(require.resolve),
   overrides: [ {
     files: [ '*.vue' ],
