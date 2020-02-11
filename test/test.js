@@ -1,7 +1,7 @@
-import test from 'ava'
-import eslint from 'eslint'
-import isPlainObj from 'is-plain-obj'
-import tempWrite from 'temp-write'
+const test = require('ava')
+const eslint = require('eslint')
+const isPlainObj = require('is-plain-obj')
+const tempWrite = require('temp-write')
 
 const hasRule = (errors, ruleId) => errors.some(x => x.ruleId === ruleId)
 
