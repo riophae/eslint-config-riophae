@@ -1,15 +1,17 @@
 const test = require('ava')
-const eslint = require('eslint')
+const { ESLint } = require('eslint')
 
 const hasRule = (errors, ruleId) => errors.some(x => x.ruleId === ruleId)
 
-function runEslint(code, config) {
-  const linter = new eslint.CLIEngine({
+async function runEslint(code, config) {
+  const eslint = new ESLint({
     useEslintrc: false,
-    configFile: config,
+    overrideConfigFile: config,
   })
 
-  return linter.executeOnText(code).results[0].messages
+  const lintResults = await eslint.lintText(code)
+
+  return lintResults[0].messages
 }
 
 test('deps', t => {
@@ -23,16 +25,16 @@ test('deps', t => {
   })
 })
 
-test('main', t => {
+test('main', async t => {
   const configs = [
     '..',
     '../legacy',
     '../vue',
   ].map(require.resolve)
 
-  configs.forEach(config => {
-    const errors = runEslint('\'use strict\'\nconsole.log("test")\n', config)
+  for (const config of configs) {
+    const errors = await runEslint('\'use strict\'\nconsole.log("test")\n', config)
 
     t.true(hasRule(errors, 'quotes'))
-  })
+  }
 })
