@@ -6,8 +6,8 @@ module.exports = {
     './rules/best-practices',
     './rules/strict-mode',
     './rules/variables',
-    './rules/nodejs-and-commonjs',
     './rules/stylistic-issues',
+    './rules/plugin-node',
     './rules/plugin-unicorn',
   ].map(require.resolve),
   parserOptions: {
@@ -21,7 +21,6 @@ module.exports = {
   },
   rules: {
     'unicorn/no-for-loop': 'off',
-    'unicorn/prefer-exponentiation-operator': 'off',
     'unicorn/prefer-includes': 'off',
     'unicorn/prefer-starts-ends-with': 'off',
     'comma-dangle': [ 'error', 'always-multiline' ],

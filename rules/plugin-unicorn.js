@@ -3,6 +3,7 @@
 module.exports = {
   plugins: [ 'unicorn' ],
   rules: {
+    'unicorn/better-regex': 'error',
     'unicorn/catch-error-name': 'off',
     'unicorn/consistent-function-scoping': 'error',
     'unicorn/custom-error-definition': 'error',
@@ -25,17 +26,20 @@ module.exports = {
     'unicorn/no-keyword-prefix': 'off',
     'unicorn/no-nested-ternary': 'off',
     'unicorn/no-new-buffer': 'error',
+    // https://github.com/sindresorhus/meta/issues/7#issuecomment-480728114
+    // https://github.com/sindresorhus/meta/issues/7#issuecomment-480595782
+    'unicorn/no-null': 'off',
     'unicorn/no-process-exit': 'off',
+    'unicorn/no-reduce': 'off',
     'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unsafe-regex': 'off',
     'unicorn/no-unused-properties': 'off',
+    'unicorn/no-useless-undefined': 'error',
     'unicorn/no-zero-fractions': 'error',
     'unicorn/number-literal-case': 'error',
     'unicorn/prefer-add-event-listener': 'error',
     'unicorn/prefer-dataset': 'error',
     'unicorn/prefer-event-key': 'error',
-    // depends on ECMAScript version
-    'unicorn/prefer-exponentiation-operator': 'error',
     'unicorn/prefer-flat-map': 'error',
     // depends on ECMAScript version
     'unicorn/prefer-includes': 'error',
@@ -43,8 +47,14 @@ module.exports = {
     'unicorn/prefer-negative-index': 'error',
     'unicorn/prefer-node-append': 'error',
     'unicorn/prefer-node-remove': 'error',
+    // doesn't support IE
+    'unicorn/prefer-number-properties': 'error',
+    'unicorn/prefer-optional-catch-binding': 'error',
     'unicorn/prefer-query-selector': 'off',
     'unicorn/prefer-reflect-apply': 'off',
+    // String#replaceAll is by far not well supported
+    'unicorn/prefer-replace-all': 'off',
+    'unicorn/prefer-set-has': 'error',
     'unicorn/prefer-spread': 'off',
     // depends on ECMAScript version
     'unicorn/prefer-starts-ends-with': 'error',
@@ -53,7 +63,7 @@ module.exports = {
     'unicorn/prefer-trim-start-end': 'error',
     'unicorn/prefer-type-error': 'error',
     'unicorn/prevent-abbreviations': 'off',
-    'unicorn/regex-shorthand': 'off',
+    'unicorn/string-content': 'off',
     'unicorn/throw-new-error': 'error',
   },
 }
