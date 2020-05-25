@@ -4,7 +4,7 @@ The customized ESLint shareable configs for the development of my open-source pr
 
 ## Usage
 
-1. `npm install --save-dev eslint eslint-plugin-unicorn eslint-plugin-import eslint-config-riophae`
+1. `npm install --save-dev eslint eslint-plugin-node eslint-plugin-unicorn eslint-plugin-import eslint-config-riophae`
 2. Choose one from these three presets:
 
     - `riophae` for linting ES6+
