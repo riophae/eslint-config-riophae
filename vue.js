@@ -5,6 +5,10 @@ module.exports = {
     '.',
     './rules/plugin-vue',
   ].map(require.resolve),
+  parserOptions: {
+    // Override `plugin:vue/base`'s setting
+    ecmaVersion: 2020,
+  },
   overrides: [ {
     files: [ '*.vue' ],
     rules: {
