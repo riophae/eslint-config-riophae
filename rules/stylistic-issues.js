@@ -39,7 +39,7 @@ module.exports = {
     'func-style': 'off',
     'function-call-argument-newline': [ 'error', 'consistent' ],
     'function-paren-newline': 'off',
-    'id-blacklist': 'off',
+    'id-denylist': 'off',
     'id-length': 'off',
     'id-match': 'off',
     'implicit-arrow-linebreak': 'off',

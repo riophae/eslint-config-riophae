@@ -20,7 +20,10 @@ module.exports = {
   },
   rules: {
     'unicorn/no-for-loop': 'off',
+    'unicorn/prefer-array-find': 'off',
     'unicorn/prefer-includes': 'off',
+    'unicorn/prefer-math-trunc': 'off',
+    'unicorn/prefer-replace-all': 'off',
     'unicorn/prefer-starts-ends-with': 'off',
     'comma-dangle': [ 'error', 'always-multiline' ],
     'func-names': [ 'error', 'always' ],

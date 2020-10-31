@@ -13,12 +13,12 @@ module.exports = {
     './rules/plugin-import',
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
   env: {
     node: true,
-    es2020: true,
+    es2021: true,
     browser: true,
   },
 }

@@ -7,7 +7,7 @@ module.exports = {
   ].map(require.resolve),
   parserOptions: {
     // Override `plugin:vue/base`'s setting
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
   },
   overrides: [ {
     files: [ '*.vue' ],

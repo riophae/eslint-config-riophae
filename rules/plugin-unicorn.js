@@ -15,12 +15,13 @@ module.exports = {
     'unicorn/explicit-length-check': 'off',
     'unicorn/filename-case': 'off',
     'unicorn/import-index': 'error',
+    'unicorn/import-style': 'off',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-array-instanceof': 'error',
     'unicorn/no-console-spaces': 'error',
     'unicorn/no-fn-reference-in-iterator': 'off',
-    // 'unicorn/no-for-loop' => depends on ECMAScript version
+    // depends on ECMAScript version
     'unicorn/no-for-loop': 'error',
     'unicorn/no-hex-escape': 'error',
     'unicorn/no-keyword-prefix': 'off',
@@ -29,6 +30,7 @@ module.exports = {
     // https://github.com/sindresorhus/meta/issues/7#issuecomment-480728114
     // https://github.com/sindresorhus/meta/issues/7#issuecomment-480595782
     'unicorn/no-null': 'off',
+    'unicorn/no-object-as-default-parameter': 'error',
     'unicorn/no-process-exit': 'off',
     'unicorn/no-reduce': 'off',
     'unicorn/no-unreadable-array-destructuring': 'error',
@@ -37,12 +39,17 @@ module.exports = {
     'unicorn/no-useless-undefined': 'error',
     'unicorn/no-zero-fractions': 'error',
     'unicorn/number-literal-case': 'error',
+    'unicorn/numeric-separators-style': 'off',
     'unicorn/prefer-add-event-listener': 'error',
+    // depends on ECMAScript version
+    'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-dataset': 'error',
     'unicorn/prefer-event-key': 'error',
     'unicorn/prefer-flat-map': 'error',
     // depends on ECMAScript version
     'unicorn/prefer-includes': 'error',
+    // depends on ECMAScript version
+    'unicorn/prefer-math-trunc': 'error',
     'unicorn/prefer-modern-dom-apis': 'error',
     'unicorn/prefer-negative-index': 'error',
     'unicorn/prefer-node-append': 'error',
@@ -52,13 +59,14 @@ module.exports = {
     'unicorn/prefer-optional-catch-binding': 'error',
     'unicorn/prefer-query-selector': 'off',
     'unicorn/prefer-reflect-apply': 'off',
-    // String#replaceAll is by far not well supported
-    'unicorn/prefer-replace-all': 'off',
+    // depends on ECMAScript version
+    'unicorn/prefer-replace-all': 'error',
     'unicorn/prefer-set-has': 'error',
     'unicorn/prefer-spread': 'off',
     // depends on ECMAScript version
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/prefer-string-slice': 'error',
+    'unicorn/prefer-ternary': 'off',
     'unicorn/prefer-text-content': 'error',
     'unicorn/prefer-trim-start-end': 'error',
     'unicorn/prefer-type-error': 'error',
