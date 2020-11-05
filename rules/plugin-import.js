@@ -1,14 +1,16 @@
 'use strict'
 
+const extensions = [ '.js', '.mjs', '.ts', '.json' ]
+
 module.exports = {
   plugins: [ 'import' ],
   settings: {
     'import/resolver': {
       node: {
-        extensions: [ '.js', '.ts', '.json' ],
+        extensions,
       },
     },
-    'import/extensions': [ '.js', '.ts', '.json' ],
+    'import/extensions': extensions,
     'import/core-modules': [],
     'import/ignore': [
       'node_modules',
