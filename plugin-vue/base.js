@@ -6,7 +6,7 @@ const deepmerge = require('deepmerge')
 const omit = require('just-omit')
 const intersector = require('intersector')
 const { ecmaVersion } = require('..').parserOptions
-const { mergeSettings } = require('./utils')
+const { extendSettings } = require('./utils')
 
 assert(Number.isInteger(ecmaVersion))
 
@@ -19,12 +19,12 @@ const preprocessedBaseConfig = deepmerge(omit(sourceBaseConfig, [ 'rules' ]), {
 
 const additionalBaseConfig = {
   settings: {
-    ...mergeSettings('plugin-import', 'import/resolver', {
+    ...extendSettings('plugin-import', 'import/resolver', {
       node: {
         extensions: [ '.vue' ],
       },
     }),
-    ...mergeSettings('plugin-import', 'import/extensions', [ '.vue' ]),
+    ...extendSettings('plugin-import', 'import/extensions', [ '.vue' ]),
   },
   overrides: [ {
     files: [ '*.vue' ],

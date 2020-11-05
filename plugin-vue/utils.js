@@ -3,18 +3,18 @@
 const assert = require('assert')
 const deepmerge = require('deepmerge')
 
-function mergeSettings(sourceFile, settingName, additionalSettings) {
+function extendSettings(sourceFile, settingName, additionalSettings) {
   const sourceSettings = require('../' + sourceFile).settings[settingName]
 
   if (!sourceSettings) {
     throw new Error(`Unknown setting: ${settingName}`)
   }
 
-  const mergedSettings = {
+  const extendedSettings = {
     [settingName]: deepmerge(sourceSettings, additionalSettings),
   }
 
-  return mergedSettings
+  return extendedSettings
 }
 
 function overrideVueRules(sourceFile, expectedSourceRuleOption, overridingRules) {
@@ -59,7 +59,7 @@ function mapCoreRules(sourceFile, ruleNames) {
 }
 
 module.exports = {
-  mergeSettings,
+  extendSettings,
   overrideVueRules,
   mapCoreRules,
 }
