@@ -88,8 +88,8 @@ const allCategories = _.union(vue3Categories, vue2Categories)
 const allVue3RuleNames = pickRuleNamesForVueVersion(vue3Categories)
 const allVue2RuleNames = pickRuleNamesForVueVersion(vue2Categories)
 
-const usedVue3RuleNames = loadRuleNames('../rules/plugin-vue/v3')
-const usedVue2RuleNames = loadRuleNames('../rules/plugin-vue/v2')
+const usedVue3RuleNames = loadRuleNames('../plugin-vue/v3')
+const usedVue2RuleNames = loadRuleNames('../plugin-vue/v2')
 const usedDeprecatedRuleNames = _.union(
   findDeprecatedRuleNames(usedVue3RuleNames),
   findDeprecatedRuleNames(usedVue2RuleNames),

@@ -44,7 +44,7 @@ function overrideVueRules(sourceFile, expectedSourceRuleOption, overridingRules)
 // Some eslint-plugin-vue rules share the same option items as their same-named core counterparts.
 // Not only did these avoid duplications, but also guaranteed their options would be kept the same.
 function mapCoreRules(sourceFile, ruleNames) {
-  const sourceRules = require('../' + sourceFile).rules
+  const sourceRules = require('../core/rules/' + sourceFile).rules
   const mappedRules = {}
 
   for (const ruleName of ruleNames) {

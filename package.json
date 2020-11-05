@@ -13,8 +13,13 @@
   "files": [
     "index.js",
     "legacy.js",
-    "vue.js",
-    "rules"
+    "vue-v3.js",
+    "vue-v2.js",
+    "core",
+    "plugin-import",
+    "plugin-node",
+    "plugin-unicorn",
+    "plugin-vue"
   ],
   "scripts": {
     "lint": "eslint .",

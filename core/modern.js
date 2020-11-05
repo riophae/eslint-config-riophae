@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: [
-    '.',
-    './plugin-vue/v3',
+    './legacy',
+    './rules/ecmascript-6',
   ].map(require.resolve),
 }

@@ -5,12 +5,15 @@ const sourceBaseConfig = require('eslint-plugin-vue/lib/configs/base')
 const deepmerge = require('deepmerge')
 const omit = require('just-omit')
 const intersector = require('intersector')
+const { ecmaVersion } = require('..').parserOptions
 const { mergeSettings } = require('./utils')
+
+assert(Number.isInteger(ecmaVersion))
 
 // We don't want to configure rules here but in dedicated files.
 const preprocessedBaseConfig = deepmerge(omit(sourceBaseConfig, [ 'rules' ]), {
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion,
   },
 })
 

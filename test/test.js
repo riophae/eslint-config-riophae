@@ -29,7 +29,8 @@ test('main', async t => {
   const configs = [
     '..',
     '../legacy',
-    '../vue',
+    '../vue-v3',
+    '../vue-v2',
   ].map(require.resolve)
 
   for (const config of configs) {
