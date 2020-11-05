@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "find-rules": "eslint-find-rules --unused --deprecated ./index.js && eslint-find-rules --unused --deprecated ./vue.js # the legacy preset is intentionally omitted",
+    "find-rules": "eslint-find-rules --unused --deprecated ./index.js && node ./scripts/find-vue-rules.js # the legacy preset is intentionally omitted",
     "unit": "ava",
     "test": "npm run lint && npm run unit && npm run find-rules"
   },
@@ -52,7 +52,8 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-unicorn": "^23.0.0",
-    "eslint-plugin-vue": "^7.1.0"
+    "eslint-plugin-vue": "^7.1.0",
+    "lodash": "^4.17.20"
   },
   "peerDependencies": {
     "eslint": "^7.12.1",
@@ -62,7 +63,10 @@
     "eslint-plugin-vue": "^7.1.0"
   },
   "dependencies": {
-    "eslint-restricted-globals": "^0.2.0"
+    "deepmerge": "^4.2.2",
+    "eslint-restricted-globals": "^0.2.0",
+    "intersector": "^1.0.17",
+    "just-omit": "^1.1.0"
   },
   "engines": {
     "node": "^10.12.0 || ^12.0.0 || >=14.0.0"

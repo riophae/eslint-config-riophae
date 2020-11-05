@@ -14,6 +14,7 @@ module.exports = {
     browser: false,
   },
   rules: {
+    'no-prototype-builtins': 'off',
     'quote-props': [ 'error', 'consistent' ],
   },
 }
