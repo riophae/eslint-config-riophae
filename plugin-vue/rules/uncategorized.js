@@ -7,7 +7,7 @@ module.exports = {
   'vue/html-comment-content-spacing': 'error',
   'vue/html-comment-indent': [ 'error', 2 ],
   'vue/match-component-file-name': 'off',
-  'vue/no-bare-strings-in-template': 'error',
+  'vue/no-bare-strings-in-template': 'off',
   'vue/no-boolean-default': 'off',
   'vue/no-duplicate-attr-inheritance': 'error',
   'vue/no-empty-component-block': 'error',

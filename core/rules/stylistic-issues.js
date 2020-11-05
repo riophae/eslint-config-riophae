@@ -144,7 +144,7 @@ module.exports = {
       before: false,
       after: true,
     } ],
-    'semi-style': [ 'error', 'last' ],
+    'semi-style': [ 'error', 'first' ],
     'sort-keys': 'off',
     'sort-vars': 'off',
     'space-before-blocks': [ 'error', 'always' ],

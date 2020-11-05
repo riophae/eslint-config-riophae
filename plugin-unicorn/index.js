@@ -5,7 +5,7 @@ module.exports = {
   rules: {
     'unicorn/better-regex': 'error',
     'unicorn/catch-error-name': 'off',
-    'unicorn/consistent-function-scoping': 'error',
+    'unicorn/consistent-function-scoping': 'off',
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
     'unicorn/escape-case': 'error',
