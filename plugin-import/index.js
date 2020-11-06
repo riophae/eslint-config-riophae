@@ -66,7 +66,10 @@ module.exports = {
     'import/no-unused-modules': 'off',
     'import/no-useless-path-segments': 'error',
     'import/no-webpack-loader-syntax': 'off',
-    'import/order': 'error',
+    'import/order': [ 'error', {
+      // Added "internal" in comparison to default.
+      groups: [ 'builtin', 'external', 'internal', 'parent', 'sibling', 'index' ],
+    } ],
     'import/prefer-default-export': 'error',
     'import/unambiguous': 'off',
   },
