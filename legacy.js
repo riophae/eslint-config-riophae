@@ -19,6 +19,8 @@ module.exports = {
     'unicorn/prefer-array-find': 'off',
     'unicorn/prefer-includes': 'off',
     'unicorn/prefer-math-trunc': 'off',
+    'unicorn/prefer-number-properties': 'off',
+    'unicorn/prefer-optional-catch-binding': 'off',
     'unicorn/prefer-replace-all': 'off',
     'unicorn/prefer-starts-ends-with': 'off',
     'comma-dangle': [ 'error', 'always-multiline' ],
