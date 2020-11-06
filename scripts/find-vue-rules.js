@@ -107,5 +107,5 @@ processResult('Deprecated Vue rules', usedDeprecatedRuleNames)
 
 if (hasIssues) {
   cli.write()
-  process.exit(1)
+  process.exitCode = 1
 }
