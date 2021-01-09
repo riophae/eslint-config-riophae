@@ -52,20 +52,20 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "eslint": "^7.12.1",
+    "eslint": "^7.17.0",
     "eslint-find-rules": "^3.6.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-unicorn": "^23.0.0",
-    "eslint-plugin-vue": "^7.1.0",
+    "eslint-plugin-unicorn": "^25.0.1",
+    "eslint-plugin-vue": "^7.4.1",
     "lodash": "^4.17.20"
   },
   "peerDependencies": {
-    "eslint": "^7.12.1",
+    "eslint": "^7.17.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-unicorn": "^23.0.0",
-    "eslint-plugin-vue": "^7.1.0"
+    "eslint-plugin-unicorn": "^25.0.1",
+    "eslint-plugin-vue": "^7.4.1"
   },
   "dependencies": {
     "deepmerge": "^4.2.2",
