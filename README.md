@@ -4,14 +4,59 @@ The customized ESLint shareable configs for the development of my open-source pr
 
 ## Usage
 
-1. `npm install --save-dev eslint eslint-plugin-node eslint-plugin-unicorn eslint-plugin-import eslint-config-riophae`
-2. Choose one from these four presets and add it to `extends`:
+First, install this package and its peer dependencies. The command to run is depending on your npm version.
 
-    - `riophae` for linting ES6+
-    - `riophae/legacy` for linting ES5
-    - `riophae/vue-v3` or `riophae/vue-v2` for linting ES6+ & .vue files (one more dependency required: `eslint-plugin-vue`)
+<table>
+  <thead>
+    <tr>
+      <th width="120">npm Version</th>
+      <th>Command</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>v7</code> or later</td>
+      <td><code>npm install --save-dev eslint-config-riophae</code></td>
+      <td>npm will automatically install peer deps for you.</td>
+    </tr>
+    <tr>
+      <td>prior to <code>v6</code></td>
+      <td><code>npm install --save-dev eslint eslint-plugin-node eslint-plugin-unicorn eslint-plugin-import eslint-config-riophae</code></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-3. Add the preset to your ESLint config file:
+Secondly, choose a preset from the following:
+
+<table>
+  <tr>
+    <th>Preset Name</th>
+    <th>Description</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td><code>riophae</code></td>
+    <td>For linting ES6+.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>riophae/vue-v3</code> for Vue 3</td>
+    <td rowspan="2">For linting ES6+ & <code>.vue</code> files.</td>
+    <td rowspan="2">Install one more dependency: <br><code>eslint-plugin-vue</code></td>
+  </tr>
+  <tr>
+    <td><code>riophae/vue-v2</code> for Vue 2</td>
+  </tr>
+  <tr>
+    <td><code>riophae/legacy</code></td>
+    <td>For linting ES5.</td>
+    <td></td>
+  </tr>
+</table>
+
+Thirdly and lastly, add the preset you just chose to your ESLint config file in the `extends` field:
 
 ```js
 {
@@ -24,4 +69,4 @@ The customized ESLint shareable configs for the development of my open-source pr
 
 ## License
 
-MIT
+MIT © [Riophae Lee](https://github.com/riophae)
