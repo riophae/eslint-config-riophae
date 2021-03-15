@@ -4,9 +4,8 @@ const assert = require('assert')
 const sourceBaseConfig = require('eslint-plugin-vue/lib/configs/base')
 const deepmerge = require('deepmerge')
 const omit = require('just-omit')
-const intersector = require('intersector')
 const { ecmaVersion } = require('..').parserOptions
-const { extendSettings } = require('./utils')
+const { extendSettings, checkOverlappings } = require('./utils')
 
 assert(Number.isInteger(ecmaVersion))
 
@@ -37,12 +36,7 @@ const additionalBaseConfig = {
 
 // Make sure there is no overlappings between the two.
 // We don't want them accidently override each other.
-const primitiveIntersect = intersector()
-const intersection = primitiveIntersect(
-  Object.keys(preprocessedBaseConfig),
-  Object.keys(additionalBaseConfig),
-)
-assert.deepEqual(intersection, [])
+checkOverlappings(preprocessedBaseConfig, additionalBaseConfig)
 
 // These will be the base config for both Vue v3 & v2.
 module.exports = {

@@ -2,6 +2,7 @@
 
 const assert = require('assert')
 const deepmerge = require('deepmerge')
+const intersector = require('intersector')
 
 function extendSettings(sourceFile, settingName, additionalSettings) {
   const sourceSettings = require('../' + sourceFile).settings[settingName]
@@ -15,6 +16,18 @@ function extendSettings(sourceFile, settingName, additionalSettings) {
   }
 
   return extendedSettings
+}
+
+function checkOverlappings(a, b) {
+  // Both a & b should be plain objects.
+
+  const primitiveIntersect = intersector()
+  const intersection = primitiveIntersect(
+    Object.keys(a),
+    Object.keys(b),
+  )
+
+  assert.deepEqual(intersection, [])
 }
 
 function overrideVueRules(sourceFile, expectedSourceRuleOption, overridingRules) {
@@ -60,6 +73,7 @@ function mapCoreRules(sourceFile, ruleNames) {
 
 module.exports = {
   extendSettings,
+  checkOverlappings,
   overrideVueRules,
   mapCoreRules,
 }

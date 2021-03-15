@@ -7,12 +7,15 @@ module.exports = {
   rules: {
     ...recommendedRules,
     'unicorn/catch-error-name': 'off',
+    'unicorn/consistent-destructuring': 'off',
     'unicorn/consistent-function-scoping': 'off',
     'unicorn/custom-error-definition': 'error',
     'unicorn/explicit-length-check': 'off',
     'unicorn/filename-case': 'off',
     'unicorn/import-style': 'off',
     'unicorn/no-array-callback-reference': 'off',
+    'unicorn/no-array-for-each': 'off',
+    'unicorn/no-array-push-push': 'off',
     'unicorn/no-array-reduce': 'off',
     // depends on ECMAScript version
     'unicorn/no-for-loop': 'error',
@@ -20,12 +23,15 @@ module.exports = {
     'unicorn/no-nested-ternary': 'off',
     // https://github.com/sindresorhus/meta/issues/7#issuecomment-480728114
     // https://github.com/sindresorhus/meta/issues/7#issuecomment-480595782
+    'unicorn/no-new-array': 'off',
     'unicorn/no-null': 'off',
     'unicorn/no-process-exit': 'off',
+    'unicorn/no-this-assignment': 'off',
     // depends on ECMAScript version
     'unicorn/prefer-array-find': 'error',
     // depends on ECMAScript version
     'unicorn/prefer-array-flat-map': 'error',
+    'unicorn/prefer-array-index-of': 'off',
     // depends on ECMAScript version
     'unicorn/prefer-includes': 'error',
     // depends on ECMAScript version
@@ -36,6 +42,7 @@ module.exports = {
     'unicorn/prefer-optional-catch-binding': 'error',
     'unicorn/prefer-query-selector': 'off',
     'unicorn/prefer-reflect-apply': 'off',
+    'unicorn/prefer-regexp-test': 'error',
     'unicorn/prefer-spread': 'off',
     // depends on ECMAScript version
     'unicorn/prefer-string-replace-all': 'error',

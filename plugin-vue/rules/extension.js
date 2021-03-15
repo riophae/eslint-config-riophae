@@ -29,6 +29,9 @@ module.exports = {
     'keyword-spacing',
   ]),
   'vue/max-len': 'off',
+  ...mapCoreRules('possible-errors', [
+    'no-constant-condition',
+  ]),
   ...mapCoreRules('best-practices', [
     'no-empty-pattern',
   ]),
